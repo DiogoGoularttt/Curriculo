@@ -9,11 +9,8 @@
   height: 100vh;
   background-color: #2a1932;
 }
-.btn-menu .fa-bars {
-  display: none;
-}
 
-.btn-menu .fa-xmark {
+.btn-menu i {
   display: none;
 }
 
@@ -24,20 +21,20 @@
 @media only screen and (max-width: 768px) {
   header {
     z-index: 90;
+    padding: 15px;
     background-color: #52284d;
   }
+  
   .btn-menu .fa-bars {
     display: block;
-    padding: 10px;
+    width: 34px;
     color: #ffffff;
-    font-size: x-large;
   }
 
   .btn-menu .fa-xmark {
     display: none;
-    padding: 10px;
+    width: 34px;
     color: #ffffff;
-    font-size: x-large;
   }
 
   .menu-items {
