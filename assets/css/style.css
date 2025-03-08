@@ -14,10 +14,6 @@
   display: none;
 }
 
-.menu-items {
-  display: none;
-}
-
 .desktop-menu {
   padding: 20px 0;
 }
@@ -49,6 +45,11 @@
     background-size: 200% 200%;
     animation: gradientMove 3s ease-in-out infinite alternate;
   }
+
+  .menu-items {
+    display: none;
+  }
+
   @keyframes gradientMove {
     0% {
       background-position: 0% 50%;
