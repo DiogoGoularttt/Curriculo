@@ -3,11 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Portfólio de Diogo Goulart - Desenvolvedor Web. Explore meus projetos e habilidades." />
+    <meta
+      name="description"
+      content="Portfólio de Diogo Goulart - Desenvolvedor Web. Explore meus projetos e habilidades."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="icon" type="image/x-icon" href="assets/img/online-resume.png" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/style-mobile.css" media="(max-width: 768px)">
-    <script defer src="https://kit.fontawesome.com/4b33774696.js" crossorigin="anonymous"
+    <link
+      rel="stylesheet"
+      href="assets/css/style-mobile.css"
+      media="(max-width: 768px)"
+    />
+    <script
+      defer
+      src="https://kit.fontawesome.com/4b33774696.js"
+      crossorigin="anonymous"
     ></script>
     <title>Diogo Goulart</title>
   </head>
@@ -15,20 +31,33 @@
     <main class="main">
       <header>
         <div class="btn-menu">
-          <i class="fa-solid fa-bars"></i>
-          <i class="fa-solid fa-xmark"></i>
+          <i id="botaoAbrir" class="fa-solid fa-bars"></i>
         </div>
       </header>
-      <nav>
-        <ul class="menu-items">
-          <li><i class="fa-solid fa-house"></i>Início</li>
-          <li><i class="fa-solid fa-user"></i>Sobre</li>
-          <li><i class="fa-solid fa-microchip"></i>Skills</li>
-          <li><i class="fa-solid fa-pen-ruler"></i>Portfólio</li>
-          <li><i class="fa-solid fa-phone"></i>Contato</li>
+
+      <nav class="menu-items">
+        <div class="close-btn">
+          <i id="botaoFechar" class="fa-solid fa-xmark hidden"></i>
+        </div>
+        <ul class="itens-menu">
+          <li>Início</li>
+          <li>Sobre</li>
+          <li>Portfólio</li>
+          <li>Skills</li>
+          <li>Contato</li>
         </ul>
       </nav>
-      <section><div class="overlay"></div></section>
+
+      <nav class="desktop-menu">
+        <ul class="lista">
+          <a href="#"><li>Início</li></a>
+          <a href="#"><li>Sobre</li></a>
+          <a href="#"><li>portfólio</li></a>
+          <a href="#"><li>Skills</li></a>
+          <a href="#"><li>Contato</li></a>
+        </ul>
+      </nav>
+      <section class="hero-section"><div class="overlay"></div></section>
     </main>
     <!-- <section>Second Section</section> -->
 

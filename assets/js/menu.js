@@ -1,33 +1,16 @@
-const botaoAbrir = document.querySelector(".fa-bars");
-const botaoFechar = document.querySelector(".fa-xmark");
+const botaoAbrir = document.querySelector("#botaoAbrir");
+const botaoFechar = document.querySelector("#botaoFechar");
 const overlay = document.querySelector(".overlay");
 const itemsMenu = document.querySelector(".menu-items");
-let isMenuOpen = false;
 
-const openMenu = () => {
-  if (isMenuOpen == false) {
-    itemsMenu.style.display = "flex";
-    overlay.style.display = "block";
-    botaoAbrir.style.display = "none";
-    botaoFechar.style.display = "block";
-    isMenuOpen = true;
-  } else if (isMenuOpen == true) {
-    itemsMenu.style.display = "none";
-    overlay.style.display = "none";
-    botaoFechar.style.display = "none";
-    botaoAbrir.style.display = "block";
-    isMenuOpen = false;
-  }
+const toggleMenu = () => {
+  itemsMenu.classList.toggle("active");
+  overlay.classList.toggle("active");
+
+  botaoAbrir.classList.toggle("hidden");
+  botaoFechar.classList.toggle("hidden");
 };
 
-botaoAbrir.addEventListener("click", () => {
-  openMenu();
-});
-
-botaoFechar.addEventListener("click", () => {
-  openMenu();
-});
-
-overlay.addEventListener("click", () => {
-  openMenu();
-});
+botaoAbrir.addEventListener("click", toggleMenu);
+botaoFechar.addEventListener("click", toggleMenu);
+overlay.addEventListener("click", toggleMenu);
