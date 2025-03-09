@@ -95,11 +95,12 @@
     justify-content: center;
     align-items: center;
     z-index: 1;
-    opacity: 0.5; /* Ajuste a opacidade para não competir com o conteúdo */
+    opacity: 0.8; /* Ajuste a opacidade para não competir com o conteúdo */
   }
 
   .hero-content h1 {
     font-size: 3rem;
+    z-index: 100;
     margin-bottom: 10px;
   }
   
