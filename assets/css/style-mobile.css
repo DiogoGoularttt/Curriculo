@@ -1,3 +1,8 @@
+.main {
+  height: 100vh;
+  background-color: #2a1932;
+}
+
 .desktop-menu {
   display: none;
 }
@@ -83,4 +88,29 @@ header {
 
 .overlay.active {
   display: block;
+}
+
+.code-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  opacity: 0.5; /* Ajuste a opacidade para não competir com o conteúdo */
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 0.8rem;
+  font-weight: 300;
 }

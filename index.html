@@ -8,6 +8,15 @@
       content="Portfólio de Diogo Goulart - Desenvolvedor Web. Explore meus projetos e habilidades."
     />
     <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
       rel="stylesheet"
       href="assets/css/style-mobile.css"
       media="(max-width: 768px)"
@@ -33,8 +42,7 @@
           <i id="botaoFechar" class="fa-solid fa-xmark hidden"></i>
         </div>
         <ul class="itens-menu">
-          <li>Início</li>
-          <li>Sobre</li>
+          <a href="#sobre-mim"><li>Sobre mim</li></a>
           <li>Portfólio</li>
           <li>Skills</li>
           <li>Contato</li>
@@ -43,17 +51,26 @@
 
       <nav class="desktop-menu">
         <ul class="lista">
-          <a href="#"><li>Início</li></a>
-          <a href="#"><li>Sobre</li></a>
-          <a href="#"><li>portfólio</li></a>
-          <a href="#"><li>Skills</li></a>
-          <a href="#"><li>Contato</li></a>
+          <li><a href="#sobre-mim">Sobre mim</a></li>
+          <li><a href="#">portfólio</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">Contato</a></li>
         </ul>
       </nav>
-      <section class="hero-section"><div class="overlay"></div></section>
+      <section class="hero-section">
+        <div class="overlay"></div>
+        <div class="code-animation">
+          <div class="hero-content">
+            <h1>Diogo Goulart</h1>
+            <p>Desenvolvedor Web | Criativo | Solucionador de Problemas</p>
+          </div>
+          <pre><code id="code"></code><span class="cursor">|</span></pre>
+        </div>
+      </section>
     </main>
-    <!-- <section>Second Section</section> -->
+    <section id="sobre-mim">Second Section</section>
 
     <script src="assets/js/menu.js"></script>
+    <script src="assets/js/hero-section.js"></script>
   </body>
 </html>
