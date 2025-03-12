@@ -1,3 +1,8 @@
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
 .main {
   height: 100vh;
   background-color: #2a1932;
@@ -5,97 +10,6 @@
 
 .desktop-menu {
   display: none;
-}
-
-header {
-  z-index: 20;
-  padding: 15px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
-.btn-menu .fa-bars {
-  display: block;
-  font-size: 1.8rem;
-  width: 14px;
-  color: #ffffff;
-}
-
-.close-btn {
-  display: block;
-  font-size: 1.8rem;
-  padding: 10px;
-  width: 14px;
-  color: #ffffff;
-}
-
-.hidden {
-  display: none;
-}
-
-.menu-items {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 50%;
-  max-width: 300px;
-  height: 100vh;
-  background-color: #52284d;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  transform: translateX(-100%);
-  transition: transform 0.3s ease;
-  z-index: 80;
-}
-
-.itens-menu {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 3rem;
-  padding: 0 10px 0 10px;
-}
-
-.itens-menu li {
-  display: flex;
-  gap: 2rem;
-  text-align: left;
-  font-size: larger;
-  color: #fff;
-  font-weight: 200;
-}
-
-.itens-menu a {
-  text-decoration: none;
-  color: inherit;
-  font-weight: 200;
-  display: block;
-  padding: 10px;
-}
-
-.menu-items.active {
-  transform: translateX(0);
-}
-
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 70;
-  display: none;
-}
-
-.overlay.active {
-  display: block;
 }
 
 .code-animation {
@@ -113,12 +27,41 @@ header {
   opacity: 0.7; /* Ajuste a opacidade para não competir com o conteúdo */
 }
 
-.hero-content h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
-
 .hero-content p {
   font-size: 0.8rem;
   font-weight: 300;
+}
+
+#about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 20px;
+  color: #2a1932;
+}
+
+#about-me h1 {
+  text-align: center;
+}
+
+.content-about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.content-about-me p {
+  flex: 1;
+  text-align: left;
+  letter-spacing: 0.12rem;
+  line-height: 1.5rem;
+}
+
+.content-about-me img {
+  max-width: 250px;
+  height: auto;
+  border-radius: 10px;
 }

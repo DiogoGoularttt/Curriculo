@@ -30,35 +30,21 @@
       crossorigin="anonymous"
     ></script>
     <title>Diogo Goulart</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
   </head>
   <body>
     <main class="main">
       <header>
-        <div class="btn-menu">
-          <i id="botaoAbrir" class="fa-solid fa-bars"></i>
-        </div>
+        <nav class="desktop-menu">
+          <ul class="lista">
+            <li><a href="#about-me">Sobre mim</a></li>
+            <li><a href="#">portfólio</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </nav>
       </header>
 
-      <nav class="menu-items">
-        <div class="close-btn">
-          <i id="botaoFechar" class="fa-solid fa-xmark hidden"></i>
-        </div>
-        <ul class="itens-menu">
-          <li><a href="#sobre-mim">Sobre mim</a></li>
-          <li>Portfólio</li>
-          <li>Skills</li>
-          <li>Contato</li>
-        </ul>
-      </nav>
-
-      <nav class="desktop-menu">
-        <ul class="lista">
-          <li><a href="#sobre-mim">Sobre mim</a></li>
-          <li><a href="#">portfólio</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Contato</a></li>
-        </ul>
-      </nav>
       <section class="hero-section">
         <div class="overlay"></div>
         <div class="code-animation">
@@ -70,9 +56,26 @@
         </div>
       </section>
     </main>
-    <section id="sobre-mim">Second Section</section>
+    <section id="about-me">
+      <h1>About Me</h1>
+      <div class="content-about-me">
+        <p>
+          I am a developer specialized in creating solutions through code, using
+          technologies such as HTML, CSS, JavaScript, PHP, and frameworks like
+          React.js and Laravel. I have experience in both personal and client
+          projects, working on the visual development of applications as well as
+          implementing practical and efficient solutions. Continuous learning is
+          one of my key traits, as I always strive to stay updated with best
+          practices, new technologies, and market trends. Programming has been
+          part of my daily routine since 2022. In 2025, I founded Fluxon
+          Digital, a startup focused on innovative technology solutions, where I
+          currently serve as CEO.
+        </p>
 
-    <script src="assets/js/menu.js"></script>
+        <img src="assets/img/foto.png" alt="Foto de Perfil">
+      </div>
+    </section>
+
     <script src="assets/js/hero-section.js"></script>
   </body>
 </html>
