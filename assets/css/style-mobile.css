@@ -21,14 +21,14 @@ header {
 
 .btn-menu .fa-bars {
   display: block;
-  font-size: larger;
+  font-size: 1.8rem;
   width: 14px;
   color: #ffffff;
 }
 
 .close-btn {
   display: block;
-  font-size: larger;
+  font-size: 1.8rem;
   padding: 10px;
   width: 14px;
   color: #ffffff;
@@ -69,6 +69,14 @@ header {
   font-size: larger;
   color: #fff;
   font-weight: 200;
+}
+
+.itens-menu a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 200;
+  display: block;
+  padding: 10px;
 }
 
 .menu-items.active {

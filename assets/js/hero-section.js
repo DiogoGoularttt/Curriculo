@@ -2,8 +2,7 @@ const codeElement = document.getElementById("code");
 const cursor = document.querySelector(".cursor");
 const codeLines = [
   "function helloWorld() {",
-  '  console.log("Olá, recrutador!");',
-  "}",
+  '  console.log("Olá, recrutador!")};',
   "helloWorld();",
 ];
 
@@ -15,16 +14,16 @@ function typeCode() {
     if (charIndex < codeLines[lineIndex].length) {
       codeElement.textContent += codeLines[lineIndex][charIndex];
       charIndex++;
-      setTimeout(typeCode, 50); // Velocidade da digitação
+      setTimeout(typeCode, 50);
     } else {
-      codeElement.textContent += "\n"; // Nova linha
+      codeElement.textContent += "\n";
       lineIndex++;
       charIndex = 0;
-      setTimeout(typeCode, 100); // Tempo entre as linhas
+      setTimeout(typeCode, 100);
     }
   } else {
-    cursor.style.display = "inline"; // Mostra o cursor no final
+    cursor.style.display = "inline";
   }
 }
 
-typeCode(); // Inicia a animação
+typeCode();

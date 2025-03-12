@@ -11,7 +11,7 @@
 
 .desktop-menu {
   padding: 20px 0;
-  z-index: 100; /* Garantir que o menu esteja acima de outros elementos */
+  z-index: 100;
   position: relative;
 }
 
@@ -26,18 +26,17 @@
 .lista li {
   color: #fff;
   font-weight: 200;
-  list-style: none; /* Remover marcadores de lista */
+  list-style: none;
 }
 
 .lista a {
   text-decoration: none;
   color: inherit;
   font-weight: 200;
-  display: block; /* Garantir que o link ocupe todo o espaço do li */
-  padding: 10px; /* Adicionar espaçamento para melhorar a área clicável */
+  display: block;
+  padding: 10px;
 }
 
-/* Hero Section */
 .hero-section {
   display: flex;
   color: #fff;
@@ -73,7 +72,7 @@
 @media only screen and (min-width: 769px) {
   .main {
     width: 100%;
-    height: 100vh; /* Ajuste conforme necessário */
+    height: 100vh;
     background: linear-gradient(90deg, #a83464, #52284d, #2a1932);
     background-size: 200% 200%;
     animation: gradientMove 3s ease-in-out infinite alternate;
@@ -95,7 +94,7 @@
     justify-content: center;
     align-items: center;
     z-index: 1;
-    opacity: 0.8; /* Ajuste a opacidade para não competir com o conteúdo */
+    opacity: 0.8;
   }
 
   .hero-content h1 {
@@ -103,7 +102,7 @@
     z-index: 100;
     margin-bottom: 10px;
   }
-  
+
   .hero-content p {
     font-size: 1.2rem;
     font-weight: 300;
